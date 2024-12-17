@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using Inventory.Model;
 using Inventory.UI;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 namespace Inventory
 {

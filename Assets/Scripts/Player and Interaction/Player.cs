@@ -1,5 +1,6 @@
- using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class Player : MonoBehaviour
@@ -42,6 +43,26 @@ public class Player : MonoBehaviour
 
         // Atualiza o interactable mais próximo
         UpdateClosestInteractable();
+
+        // Verifica se a tecla Enter é pressionada
+        if (Input.GetKeyDown(KeyCode.J)) // Use KeyCode.KeypadEnter para Enter do teclado numérico
+        {
+            LoadNextLevel();
+        }
+    }
+
+    void LoadNextLevel()
+    {
+        // Carrega a próxima cena na ordem de build
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            Debug.Log("Não há mais níveis para carregar.");
+        }
     }
 
     private void FixedUpdate()
