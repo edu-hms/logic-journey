@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3875597791125643763}
   - component: {fileID: 3917826217275060187}
   m_Layer: 0
-  m_Name: Yellow Coin
+  m_Name: Yellow Gen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
