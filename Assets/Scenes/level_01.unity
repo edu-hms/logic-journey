@@ -11322,7 +11322,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryUI: {fileID: 6187401780946963622}
-  inventorySize: 5
+  inventoryData: {fileID: 11400000, guid: 10073aec479190243829ea3064b6a681, type: 2}
+  initialItems:
+  - quantity: 5
+    item: {fileID: 11400000, guid: 42179bf0b22eefe46883b058ac1152e8, type: 2}
+  - quantity: 0
+    item: {fileID: 0}
+  - quantity: 1
+    item: {fileID: 11400000, guid: 178a15d6c2bd43447b51cbbaacbc8794, type: 2}
+  - quantity: 2
+    item: {fileID: 11400000, guid: 42179bf0b22eefe46883b058ac1152e8, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -23445,6 +23454,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5259988696356370268, guid: 3eae7e0866f471d40a82f81a19b9f3b0, type: 3}
+      propertyPath: image2
+      value: 
+      objectReference: {fileID: -1962323180, guid: a4b1b1d7968f5264f87cb435f9481ebc, type: 3}
     - target: {fileID: 5259988696356370268, guid: 3eae7e0866f471d40a82f81a19b9f3b0, type: 3}
       propertyPath: mouseFollower
       value: 
